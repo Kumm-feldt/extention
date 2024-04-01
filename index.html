@@ -3,15 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
-    <title>Document</title>
+    <title>Quote Manager</title>
 </head>
 <body>
-    <p class="quote-p">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia enim corrupti dolore itaque est ex in fugit debitis commodi placeat voluptates laborum laudantium, facere dolorum unde exercitationem consequatur illum mollitia.
-    </p>
+    <div id="container">
+        <h1 class="title">QUOTE MANAGER</h1>
+        <div id="quote-container">
+            <h2 class="quote-title">TITLE</h2>
+            <p class="quote-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit fuga provident officiis quod facere repellat commodi, odit recusandae dolorum voluptatem doloremque. Incidunt consequuntur enim quaerat fugiat, iste culpa nam.</p>
+            <div class="quote-footer">
+                <p class="quote-source">Source</p><p class="quote-tag">Tag:</p><div class="dot"></div>
+            </div>
+        </div>
+    </div>
 
+    <div id="pop-wrapper">
+        <div id="pop-quote-container">
+            <input type="text" class="pop-quote-title" placeholder="Title" required>
+            <p class="pop-quote-p"></p>
+            <div class="quote-footer">
+                <p class="pop-quote-source-tag">Source:</p> <p class="pop-quote-source-url"></p>
+                <p class="tag-pop-up">Tag:</p><input type="text" class="pop-quote-tag" placeholder="Tag (optional)"><div class="pop-dot"></div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
+
     
 </body>
 </html>
