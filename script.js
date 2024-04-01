@@ -1,6 +1,26 @@
-let p = document.querySelector(".quote-p");
+let p = document.querySelector("#pop-quote-p");
+let source = document.querySelector("#pop-url");
+let popUpContainer = document.querySelector("#pop-wrapper");
+let container = document.querySelector("#container");
+
 const currentLocation = window.location.href;
 
+
+
+window.document.addEventListener('keydown', function(event) {
+    if ( event.shiftKey) {
+    alert('Ctrl+Shift+X pressed');
+    
+    selectedText();
+    popUpContainer.style.display = "block";
+    container.style.display = "none";
+
+    } 
+    if (event.metaKey && event.shiftKey && event.key === 'x') {
+        console.log('Command+Shift+X pressed');
+        selectedText()
+    }
+});
 
 
 function selectedText(){
@@ -13,19 +33,6 @@ function selectedText(){
     // Log the selected text to the console
    
     p.value = selectedText;
-    alert(selectedText)
+    source.value = currentLocation;
+
    }
-   
-//
-window.document.addEventListener('keydown', function(event) {
-    if ( event.shiftKey) {
-       alert('Ctrl+Shift+X pressed');
-    selectedText()
-    } 
-    if (event.metaKey && event.shiftKey && event.key === 'x') {
-        console.log('Command+Shift+X pressed');
-        // Call another function here if needed
-    }
-});
-
-

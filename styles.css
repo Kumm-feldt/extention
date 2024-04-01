@@ -1,11 +1,11 @@
-#container{
+#container, #pop-wrapper{
     display: flex;
     margin: auto;
     width: 90vw;
     flex-direction: column;
 }
 
-#quote-container{
+#quote-container, #pop-quote-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@
 
 }
 
-.dot{
+.dot, #pop-dot{
     height: 25px;
     width: 25px;
     background-color: #612020;
@@ -26,7 +26,7 @@
 }
 
 
-.quote-footer{
+.quote-footer, #pop-quote-footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
